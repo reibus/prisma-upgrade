@@ -1,6 +1,6 @@
 {
   "name": "@reibus/prisma-upgrade",
-  "version": "0.0.44",
+  "version": "0.0.45",
   "description": "Upgrade is a CLI tool to help Prisma 1 users upgrade to Prisma 2+.",
   "main": "dist/api/index.js",
   "files": [
