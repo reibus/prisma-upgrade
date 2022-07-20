@@ -489,7 +489,7 @@ export async function upgrade(input: Input): Promise<Output> {
     }
     const hasOne = edge1.type === "hasOne" ? edge1 : edge2
     // skip over ops that have already been applied
-    const p2Field = prisma2.findField((m, f) => hasOne.from.name === m.name && hasOne.to.name === f.name)
+    const p2Field = prisma2.findField((m, f) => hasOne.from.name === m.name && hasOne.fromField.name === f.name)
     if (!p2Field || !p2Field.type.optional()) {
       continue
     }
