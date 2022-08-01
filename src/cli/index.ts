@@ -367,6 +367,13 @@ async function main(argv: string[]): Promise<void> {
             console.log()
             console.log()
             break
+          case "MigrateRequiredHasManyOp":
+            console.log(`  ${bold(`Fix required one-to-many table relations`)}`);
+            console.log();
+            console.log(redent(queries.join("\n"), 4));
+            console.log();
+            console.log();
+            break
           case "MigrateOneToOneTableOp":
             console.log(`  ${bold(`Fix one-to-one table relations`)}`)
             console.log(
